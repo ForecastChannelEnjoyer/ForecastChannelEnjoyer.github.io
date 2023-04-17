@@ -1,1 +1,8 @@
-<script type="module" src="script1.js"></script>
+<html>
+   <head>
+      <script data-main = "lib/main" src = "libs/require.js">
+        var weather = require("weather-envcanada");
+        weather.getWeatherBySiteName("Vaughan", "ON", function(error, weatherData) {});
+      </script>
+   </head>
+</html>
